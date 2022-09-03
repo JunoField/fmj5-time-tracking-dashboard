@@ -66,3 +66,14 @@ article{
     color:white;
     margin-top: 3px;
 }
+
+.time-selector{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--desaturatedBlue);
+}
+
+
