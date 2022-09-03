@@ -77,3 +77,36 @@ article{
 }
 
 
+.hidden{
+    display: none;
+}
+
+.activity-tile{
+    background-color: var(--colWork);
+    background-image: url("./images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: 94% -13px;
+    padding-top: 38px;
+    overflow: visible;
+    color: white;
+}
+
+.activity-tile-text{
+    display: flex;
+    background-color: var(--darkBlue);
+    border-radius: 15px;
+}
+
+.activity-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-left h2{
+    color
+}
+
+.activity-right{
+    display: flex;
+    flex-direction: column;
+}
