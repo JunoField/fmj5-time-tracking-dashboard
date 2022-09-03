@@ -95,6 +95,7 @@ article{
     display: flex;
     background-color: var(--darkBlue);
     border-radius: 15px;
+    justify-content: space-between;
 }
 
 .activity-left{
@@ -118,4 +119,13 @@ article{
 .activity-right{
     display: flex;
     flex-direction: column;
+    text-align: right;
+    margin: 0px 0px auto 0px;
+    align-items: flex-end;
+
+
+}
+
+.activity-right img{
+    width: 30px;
 }
