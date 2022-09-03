@@ -98,12 +98,21 @@ article{
 }
 
 .activity-left{
+    text-align: left;
     display: flex;
     flex-direction: column;
+    margin: 27px 0px 28px 25px;
 }
 
 .activity-left h2{
-    color
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0px 0px 8px 0px;
+}
+
+.time-current{
+    font-size: 1.8em;
+    font-weight: 300;
 }
 
 .activity-right{
