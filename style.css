@@ -83,8 +83,7 @@ article{
 }
 
 .activity-tile{
-    background-color: var(--colWork);
-    background-image: url("./images/icon-work.svg");
+    background-color: black;
     background-repeat: no-repeat;
     background-position: 94% -13px;
     padding-top: 38px;
@@ -138,4 +137,34 @@ article{
     font-weight: 400;
     color: var(--paleBlue);
     margin-top: 25px;
+}
+
+.tile-work{
+    background-color: var(--colWork);
+    background-image: url("./images/icon-work.svg");
+}
+
+.tile-play{
+    background-color: var(--colPlay);
+    background-image: url("./images/icon-play.svg");
+}
+
+.tile-study{
+    background-color: var(--colStudy);
+    background-image: url("./images/icon-study.svg");
+}
+
+.tile-exercise{
+    background-color: var(--colExercise);
+    background-image: url("./images/icon-exercise.svg");
+}
+
+.tile-social{
+    background-color: var(--colSocial);
+    background-image: url("./images/icon-social.svg");
+}
+
+.tile-self-care{
+    background-color: var(--colSelfCare);
+    background-image: url("./images/icon-self-care.svg");
 }
