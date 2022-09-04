@@ -168,3 +168,11 @@ article{
     background-color: var(--colSelfCare);
     background-image: url("./images/icon-self-care.svg");
 }
+
+.attribution{
+    position: fixed;
+    font-size: 10px;
+    color: var(--paleBlue);
+    right: 0px;
+    bottom: 0px;
+}
