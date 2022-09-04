@@ -29,6 +29,7 @@ article{
     background-color: var(--darkBlue);
     border-radius: 15px;
     overflow: hidden;
+    margin-bottom: 25px;
 }
 
 .user-display{
@@ -96,13 +97,15 @@ article{
     background-color: var(--darkBlue);
     border-radius: 15px;
     justify-content: space-between;
+    padding-inline: 25px;
+    padding-block: 28px;
 }
 
 .activity-left{
     text-align: left;
     display: flex;
     flex-direction: column;
-    margin: 27px 0px 28px 25px;
+    margin: 0px 0px 0px 0px;
 }
 
 .activity-left h2{
@@ -120,12 +123,19 @@ article{
     display: flex;
     flex-direction: column;
     text-align: right;
-    margin: 0px 0px auto 0px;
+    margin: 10px 0px auto 0px;
     align-items: flex-end;
 
 
 }
 
 .activity-right img{
-    width: 30px;
+    width: 22px;
+}
+
+.time-previous{
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--paleBlue);
+    margin-top: 25px;
 }
