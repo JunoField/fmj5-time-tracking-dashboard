@@ -244,9 +244,6 @@ article{
         padding-block: 30px;
     }
 
-    .activity-tile-text h2{
-
-    }
 
 
     .time-current{
@@ -259,6 +256,10 @@ article{
         grid-column: 1;
         text-align: left;
         margin-top: 8px;
+    }
+
+    .activity-tile-text img{
+        margin: 7px 0px 0px auto;
     }
 
     .tile-work{
