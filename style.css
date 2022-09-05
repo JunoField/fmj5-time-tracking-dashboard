@@ -184,8 +184,89 @@ article{
 @media only screen and (min-width: 1000px){
 
     main{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto;
+        gap: 30px;
     }
+
+    article{
+        width: 256px;
+        margin: 0px;
+    }
+
+    .user-tile{
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .user-display{
+        flex-direction: column;
+        border-radius: 15px;
+        min-height: 355px;
+    }
+
+    .user-display img{
+        width: 80px;
+        height: unset;
+    }
+
+    .user-display-text{
+        margin: 30px 0px 0px 0px;
+    }
+
+    .user-name{
+        font-size: 2.24em;
+    }
+
+    .time-selector{
+        flex-direction: column;
+        text-align: left;
+        padding-top: 25px;
+        padding-bottom: 33px;
+    }
+
+    .time-selector a{
+        margin-left: 33px;
+    }
+
+
+
+    .tile-work{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .tile-play{
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .tile-study{
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .tile-exercise{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .tile-social{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .tile-self-care{
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+
+
+
 }
