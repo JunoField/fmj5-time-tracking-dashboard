@@ -13,6 +13,8 @@
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
+  <script src="./timeframeChange.js" defer></script>
+
 </head>
 <body>
 
@@ -28,9 +30,9 @@
       </div>
 
       <div class="time-selector">
-        <a>Daily</a>
-        <a>Weekly</a>
-        <a>Monthly</a>
+        <button class="time-button">Daily</button>
+        <button class="time-button time-active">Weekly</button>
+        <button class="time-button">Monthly</button>
       </div>
       
     </article>
@@ -40,14 +42,14 @@
 
       <div class="activity-tile-text">
         <h2>Work</h2>
-        <p class="hidden">5hrs</p><!-- daily -->
-        <p class="time-current">32hrs</p><!-- weekly -->
-        <p class="hidden">103hrs</p> <!-- monthly -->
+        <p class="time-current current-day hidden">5hrs</p><!-- daily -->
+        <p class="time-current current-week">32hrs</p><!-- weekly -->
+        <p class="time-current current-month hidden">103hrs</p> <!-- monthly -->
 
         <img src="./images/icon-ellipsis.svg">
-        <p class="hidden">Yesterday - 7hrs</p> <!-- daily -->
-        <p class="time-previous">Last Week - 36hrs</p> <!-- weekly -->
-        <p class="hidden">Last Month - 128hrs</p> <!-- monthly -->
+        <p class="time-previous previous-day hidden">Yesterday - 7hrs</p> <!-- daily -->
+        <p class="time-previous previous-week">Last Week - 36hrs</p> <!-- weekly -->
+        <p class="time-previous previous-month hidden">Last Month - 128hrs</p> <!-- monthly -->
       </div>
       
     </article>
@@ -56,14 +58,14 @@
 
       <div class="activity-tile-text">
         <h2>Play</h2>
-        <p class="hidden">1hr</p><!-- daily -->
-        <p class="time-current">10hrs</p><!-- weekly -->
-        <p class="hidden">23hrs</p> <!-- monthly -->
+        <p class="time-current current-day hidden">1hr</p><!-- daily -->
+        <p class="time-current current-week">10hrs</p><!-- weekly -->
+        <p class="time-current current-month hidden">23hrs</p> <!-- monthly -->
 
         <img src="./images/icon-ellipsis.svg">
-        <p class="hidden">Yesterday - 2hrs</p> <!-- daily -->
-        <p class="time-previous">Last Week - 8hrs</p> <!-- weekly -->
-        <p class="hidden">Last Month - 29hrs</p> <!-- monthly -->
+        <p class="time-previous previous-day hidden">Yesterday - 2hrs</p> <!-- daily -->
+        <p class="time-previous previous-week">Last Week - 8hrs</p> <!-- weekly -->
+        <p class="time-previous previous-month hidden">Last Month - 29hrs</p> <!-- monthly -->
       </div>
       
     </article>
@@ -72,14 +74,14 @@
 
       <div class="activity-tile-text">
         <h2>Study</h2>
-        <p class="hidden">0hrs</p><!-- daily -->
-        <p class="time-current">4hrs</p><!-- weekly -->
-        <p class="hidden">13hrs</p> <!-- monthly -->
+        <p class="time-current current-day hidden">0hrs</p><!-- daily -->
+        <p class="time-current current-week">4hrs</p><!-- weekly -->
+        <p class="time-current current-month hidden">13hrs</p> <!-- monthly -->
 
         <img src="./images/icon-ellipsis.svg">
-        <p class="hidden">Yesterday - 1hr</p> <!-- daily -->
-        <p class="time-previous">Last Week - 7hrs</p> <!-- weekly -->
-        <p class="hidden">Last Month - 19hrs</p> <!-- monthly -->
+        <p class="time-previous previous-day hidden">Yesterday - 1hr</p> <!-- daily -->
+        <p class="time-previous previous-week">Last Week - 7hrs</p> <!-- weekly -->
+        <p class="time-previous previous-month hidden">Last Month - 19hrs</p> <!-- monthly -->
       </div>
       
     </article>
@@ -88,14 +90,14 @@
 
       <div class="activity-tile-text">
         <h2>Exercise</h2>
-        <p class="hidden">1hr</p><!-- daily -->
-        <p class="time-current">4hrs</p><!-- weekly -->
-        <p class="hidden">11hrs</p> <!-- monthly -->
+        <p class="time-current current-day hidden">1hr</p><!-- daily -->
+        <p class="time-current current-week">4hrs</p><!-- weekly -->
+        <p class="time-current current-month hidden">11hrs</p> <!-- monthly -->
 
         <img src="./images/icon-ellipsis.svg">
-        <p class="hidden">Yesterday - 1hr</p> <!-- daily -->
-        <p class="time-previous">Last Week - 5hrs</p> <!-- weekly -->
-        <p class="hidden">Last Month - 18hrs</p> <!-- monthly -->
+        <p class="time-previous previous-day hidden">Yesterday - 1hr</p> <!-- daily -->
+        <p class="time-previous previous-week">Last Week - 5hrs</p> <!-- weekly -->
+        <p class="time-previous previous-month hidden">Last Month - 18hrs</p> <!-- monthly -->
       </div>
       
     </article>
@@ -104,14 +106,14 @@
 
       <div class="activity-tile-text">
         <h2>Social</h2>
-        <p class="hidden">1hr</p><!-- daily -->
-        <p class="time-current">5hrs</p><!-- weekly -->
-        <p class="hidden">21hrs</p> <!-- monthly -->
+        <p class="time-current current-day hidden">1hr</p><!-- daily -->
+        <p class="time-current current-week">5hrs</p><!-- weekly -->
+        <p class="time-current current-month hidden">21hrs</p> <!-- monthly -->
 
         <img src="./images/icon-ellipsis.svg">
-        <p class="hidden">Yesterday - 3hrs</p> <!-- daily -->
-        <p class="time-previous">Last Week - 10hrs</p> <!-- weekly -->
-        <p class="hidden">Last Month - 23hrs</p> <!-- monthly -->
+        <p class="time-previous previous-day hidden">Yesterday - 3hrs</p> <!-- daily -->
+        <p class="time-previous previous-week">Last Week - 10hrs</p> <!-- weekly -->
+        <p class="time-previous previous-month hidden">Last Month - 23hrs</p> <!-- monthly -->
       </div>
       
     </article>
@@ -120,14 +122,14 @@
 
       <div class="activity-tile-text">
         <h2>Self Care</h2>
-        <p class="hidden">0hrs</p><!-- daily -->
-        <p class="time-current">2hrs</p><!-- weekly -->
-        <p class="hidden">7hrs</p> <!-- monthly -->
+        <p class="time-current current-day hidden">0hrs</p><!-- daily -->
+        <p class="time-current current-week">2hrs</p><!-- weekly -->
+        <p class="time-current current-month hidden">7hrs</p> <!-- monthly -->
 
         <img src="./images/icon-ellipsis.svg">
-        <p class="hidden">Yesterday - 1hr</p> <!-- daily -->
-        <p class="time-previous">Last Week - 2hrs</p> <!-- weekly -->
-        <p class="hidden">Last Month - 11hrs</p> <!-- monthly -->
+        <p class="time-previous previous-day hidden">Yesterday - 1hr</p> <!-- daily -->
+        <p class="time-previous previous-week">Last Week - 2hrs</p> <!-- weekly -->
+        <p class="time-previous previous-month hidden">Last Month - 11hrs</p> <!-- monthly -->
       </div>
       
     </article>
