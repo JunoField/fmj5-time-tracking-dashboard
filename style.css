@@ -234,7 +234,32 @@ article{
         margin-left: 33px;
     }
 
+    .activity-tile{
+        padding-top: 45px;
+    }
 
+    .activity-tile-text{
+        grid-template-rows: auto auto auto;
+        padding-inline: 30px;
+        padding-block: 30px;
+    }
+
+    .activity-tile-text h2{
+
+    }
+
+
+    .time-current{
+        margin-top: 25px;
+        font-size: 3.1em;
+    }
+
+    .time-previous{
+        grid-row: 3;
+        grid-column: 1;
+        text-align: left;
+        margin-top: 8px;
+    }
 
     .tile-work{
         grid-column: 2;
