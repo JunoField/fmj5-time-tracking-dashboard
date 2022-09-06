@@ -5,9 +5,9 @@ async function loadData(){
         console.log(data);
 
         for (var section of data){
-            let sectionName = section.title;
-            console.log(sectionName);
-            document.getElementById("")
+            let sectionName = section.title.toLowerCase();
+            console.log(section.timeframes.daily.current);
+            document.getElementById(sectionName + "-current-day").innerHTML = section.timeframes.daily.current;
         };
     })
 
