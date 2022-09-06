@@ -6,8 +6,15 @@ async function loadData(){
 
         for (var section of data){
             let sectionName = section.title.toLowerCase();
-            console.log(section.timeframes.daily.current);
+
             document.getElementById(sectionName + "-current-day").innerHTML = section.timeframes.daily.current;
+            document.getElementById(sectionName + "-current-week").innerHTML = section.timeframes.weekly.current;
+            document.getElementById(sectionName + "-current-month").innerHTML = section.timeframes.monthly.current;
+
+            document.getElementById(sectionName + "-previous-day").innerHTML = section.timeframes.daily.previous;
+            document.getElementById(sectionName + "-previous-week").innerHTML = section.timeframes.weekly.previous;
+            document.getElementById(sectionName + "-previous-month").innerHTML = section.timeframes.monthly.previous;
+
         };
     })
 
